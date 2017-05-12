@@ -130,6 +130,10 @@ public class MainActivity extends AppCompatActivity {
         SimpleDateFormat fech = new SimpleDateFormat("EEEE d ' de ' MMM 'de' yyyy");
         String fech1 = fech.format(dato);
         tv_proximo.setText("En " + (pos1 - diaAnio) + " dias, " + fech1);
+
+        if((pos1 - diaAnio) == 1) {
+            tv_proximo.setText("Mañana, " + fech1);
+        }
     }
 
 }
