@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcd200"
+    tools:context="com.jhoann.dell_pc.picoyplacapasto.AboutActivity">
+
+    <TextView
+        android:text="Autor: Jhoann Carlosama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        tools:layout_editor_absoluteY="81dp"
+        tools:layout_editor_absoluteX="114dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:text="REGRESAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_salir"
+        android:onClick="salir"
+        tools:layout_editor_absoluteY="434dp"
+        tools:layout_editor_absoluteX="259dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="203dp"
+        android:layout_height="208dp"
+        app:srcCompat="@mipmap/mariana"
+        android:id="@+id/imageView2"
+        tools:layout_editor_absoluteY="117dp"
+        tools:layout_editor_absoluteX="93dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="UNIVERSIDAD MARIANA"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

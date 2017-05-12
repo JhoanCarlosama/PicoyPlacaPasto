@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcd200"
+    tools:context="com.jhoann.dell_pc.picoyplacapasto.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="223dp"
+        android:layout_x="72dp"
+        android:layout_y="97dp"
+        android:background="@mipmap/calendario" />
+
+    <TextView
+        android:id="@+id/tv_instance"
+        android:layout_width="216dp"
+        android:layout_height="77dp"
+        android:layout_above="@+id/btn_configuracion"
+        android:layout_centerHorizontal="true"
+        android:layout_x="77dp"
+        android:layout_y="221dp"
+        android:text="- -"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <TextView
+        android:id="@+id/tv_fecha"
+        android:layout_width="219dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/btn_configuracion"
+        android:layout_alignEnd="@+id/btn_configuracion"
+        android:layout_alignRight="@+id/btn_configuracion"
+        android:layout_marginBottom="43dp"
+        android:layout_x="75dp"
+        android:layout_y="27dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_configuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="68dp"
+        android:layout_toEndOf="@+id/tv_numero"
+        android:layout_toRightOf="@+id/tv_numero"
+        android:layout_x="15dp"
+        android:layout_y="455dp"
+        android:onClick="configuracion"
+        android:text="AJUSTES"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/tv_proximo"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_x="18dp"
+        android:layout_y="399dp"
+        android:text="Próximo:"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <TextView
+        android:id="@+id/tv_msj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="370dp"
+        android:text="Mi Placa:"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="92dp"
+        android:layout_y="366dp"
+        android:text="num"
+        android:textSize="20dp"
+        android:textColor="#4E342E"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_aplica"
+        android:layout_width="115dp"
+        android:layout_height="31dp"
+        android:layout_x="125dp"
+        android:layout_y="327dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</AbsoluteLayout>

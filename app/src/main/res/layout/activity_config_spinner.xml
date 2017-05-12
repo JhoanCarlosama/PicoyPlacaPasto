@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcd200"
+    tools:context="com.jhoann.dell_pc.picoyplacapasto.ConfigSpinner">
+
+    <Spinner
+        android:id="@+id/sp_digitos"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_x="69dp"
+        android:layout_y="102dp"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/tv_mensaje"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="35dp"
+        android:textSize="15dp"
+        android:text="Escoja su número pico y placa: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="469dp"
+        android:onClick="regresar"
+        android:text="REGRESAR"
+        android:layout_alignBaseline="@+id/btn_acerca"
+        android:layout_alignBottom="@+id/btn_acerca"
+        android:layout_alignLeft="@+id/tv_mensaje"
+        android:layout_alignStart="@+id/tv_mensaje" />
+
+    <Button
+        android:id="@+id/btn_acerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="264dp"
+        android:layout_y="468dp"
+        android:onClick="acercaDe"
+        android:text="ACERCA DE"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
